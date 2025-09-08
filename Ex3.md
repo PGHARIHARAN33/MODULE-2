@@ -2,7 +2,7 @@
 # Ex.Name: Write a CPP Program to overload a function to perform sum of two integers and sum of three integers
 
 ## Aim:
-To write a C++ program that overloads a function to perform the sum of two integers and the sum of three integers.
+To write a CPP program to overload a function to perform the sum of two integers and the sum of three integers.
 
 ## Algorithm:
 1. Start the program.
@@ -15,33 +15,38 @@ To write a C++ program that overloads a function to perform the sum of two integ
 8. End the program.
 
 ## Program:
-```cpp
-#include<iostream>
+```
+#include <iostream>
 using namespace std;
-class fun{
-    public:
-    void add(int a,int b){
-        cout<<"Sum of two Numbers="<<a+b<<endl;
+
+class Sum {
+public:
+    void sum(int x, int y) {
+        cout << "Sum of two Numbers=" << x + y << endl;
     }
-    void add(int a,int b,int c){
-        cout<<"Sum of three Numbers="<<a+b+c;
+
+    void sum(int x, int y, int z) {
+        cout << "Sum of three Numbers=" << x + y + z;
     }
 };
-int main()
-{
-    int a,b,c;
-    cin>>a>>b;
-    fun f;
-    f.add(a,b);
-    cin>>a>>b>>c;
-    f.add(a,b,c);
+
+int main() {
+    Sum s;
+    int x, y, z;
+
+    cin >> x >> y;
+    s.sum(x, y);
+    cin >> x >> y >> z;
+    s.sum(x, y, z);
+
+    return 0;
 }
 ```
 
 
 
 ## Output:
-<img width="553" height="255" alt="image" src="https://github.com/user-attachments/assets/0e20f780-6729-4655-9a2d-f1129790b11d" />
+<img width="1338" height="404" alt="image" src="https://github.com/user-attachments/assets/9adb740f-8f93-4059-8392-e441599fe4a6" />
 
 
 

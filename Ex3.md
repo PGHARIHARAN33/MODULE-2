@@ -51,4 +51,4 @@ int main() {
 
 
 ## Result:
-The program successfully demonstrates function overloading by computing the sum of two integers and the sum of three integers using the same function name.
+Hence the program is executed successfully.
